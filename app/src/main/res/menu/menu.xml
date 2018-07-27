@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/filter_winners"
+        android:title="Show Winners"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/filter_losers"
+        android:title="Show Losers"/>
+    <item
+        android:id="@+id/filter_none"
+        android:title="Show All"/>
+    <item
+        android:id="@+id/action_clear_data"
+        android:title="Clear Data"/>
+</menu>

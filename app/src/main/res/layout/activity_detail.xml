@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        tools:context=".presentation.DetailActivity">
+
+        <com.codebaum.mystockpricechecker.presentation.view.DetailRow
+            android:id="@+id/detail_ticker_symbol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:DetailRow_label="Ticker Symbol"
+            app:DetailRow_value="AAPL"/>
+
+        <com.codebaum.mystockpricechecker.presentation.view.DetailRow
+            android:id="@+id/detail_exchange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:DetailRow_label="Exchange"
+            app:DetailRow_value="NYSE"/>
+
+        <com.codebaum.mystockpricechecker.presentation.view.DetailRow
+            android:id="@+id/detail_sector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:DetailRow_label="Sector"
+            app:DetailRow_value="Technology"/>
+
+        <com.codebaum.mystockpricechecker.presentation.view.DetailRow
+            android:id="@+id/detail_latest_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:DetailRow_label="Latest Price"
+            app:DetailRow_value="34.84"/>
+
+        <com.codebaum.mystockpricechecker.presentation.view.DetailRow
+            android:id="@+id/detail_opening_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:DetailRow_label="Opening Price"
+            app:DetailRow_value="32.20"/>
+
+        <com.codebaum.mystockpricechecker.presentation.view.DetailRow
+            android:id="@+id/detail_closing_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:DetailRow_label="Closing Price"
+            app:DetailRow_value="36.38"/>
+
+        <com.codebaum.mystockpricechecker.presentation.view.DetailRow
+            android:id="@+id/detail_previous_closing_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:DetailRow_label="Previous Close"
+            app:DetailRow_value="31.48"/>
+
+        <com.codebaum.mystockpricechecker.presentation.view.DetailRow
+            android:id="@+id/detail_percentage_change"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:DetailRow_label="Percentage Change"
+            app:DetailRow_value="2.34%"/>
+
+    </LinearLayout>
+</ScrollView>
